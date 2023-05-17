@@ -16,7 +16,7 @@ def encrypt(plaintext, key):
     return ciphertext
 
 
-def encrypt():
+def decrypt():
     pass
 
 def crack():
