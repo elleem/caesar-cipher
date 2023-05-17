@@ -10,11 +10,11 @@ Version:  1.0
 
 #### Overview
 
--[] Define an encrypt function that takes in plaintext and a numeric shift (int)
+-[x] Define an encrypt function that takes in plaintext and a numeric shift (int)
 
-    -[] Be sure to wrap the shift
+    -[x] Be sure to wrap the shift
 
--[] Define a decrypt function that takes in ciphertext and a numeric shift (int) when the key is provided
+-[x] Define a decrypt function that takes in ciphertext and a numeric shift (int) when the key is provided
 
 -[] Define a crack function that will decode the cipher so that an encrypted message can be read without access to the key
 

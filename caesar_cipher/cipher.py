@@ -16,9 +16,14 @@ def encrypt(plaintext, key):
     return ciphertext
 
 
-def decrypt():
-    pass
+def decrypt(ciphertext, key):
+    return encrypt(ciphertext, -key)
 
-def crack():
-    pass
+def crack(ciphertext):
+    for key in range(26):
+        plaintext = decrypt(ciphertext, key)
+        word_count = len(plaintext.split())
+        if count_words(plaintext) == word_count:
+            return plaintext
+    return ''
 
