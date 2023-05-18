@@ -1,4 +1,9 @@
-from caesar_cipher.is_english import count_words
+
+try:
+    from is_english import count_words
+except:
+    from caesar_cipher.is_english import count_words
+
 
 def encrypt(plaintext, key):
     ciphertext = ""
@@ -25,5 +30,12 @@ def crack(ciphertext):
         word_count = len(plaintext.split())
         if count_words(plaintext) == word_count:
             return plaintext
+
     return ''
 
+
+if __name__ == "__main__":
+    code = encrypt("Live laugh love", 6)
+    print(code)
+    print (decrypt(code, 6))
+    crack(code)

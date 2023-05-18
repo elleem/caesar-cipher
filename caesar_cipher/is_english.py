@@ -6,8 +6,10 @@ nltk.download("names", quiet=True)
 
 from nltk.corpus import words, names
 
-word_dict = words.words()
-name_dict = names.words()
+
+word_dict = set(words.words() + [word.lower() for word in words.words()])
+name_dict = set(names.words())
+
 
 def count_words(text):
 

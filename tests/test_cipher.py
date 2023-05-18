@@ -60,3 +60,10 @@ def test_crack_nonsense():
     actual = crack(encrypted)
     expected = ""
     assert actual == expected
+
+#tests authored by Lauren
+
+
+
+
+
